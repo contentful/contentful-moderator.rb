@@ -1,0 +1,48 @@
+---
+
+endpoint: '/moderator'
+port: 33123
+content_types:
+  post:
+    author_field:
+      field_id: 'author_field'
+      notify_reviewer_on: 'Ready for review'
+      email_subject: 'A submission requires review'
+      email_body: >
+          Dear Editor Team,
+
+
+          The entry 'webhook_url' is ready for review.
+
+
+          Cordially,
+
+          Moderator Bot
+    reviewer_field:
+      field_id: 'reviewer_field'
+      notify_author_on: 'Needs further editing'
+      email_subject: 'A submission requires further editing'
+      email_body: >
+          Dear Authoring Team,
+
+
+          The entry 'webhook_url' requires further editing.
+
+
+          Cordially,
+
+          Moderator Bot
+authors:
+  - 'author@example.com'
+editors:
+  - 'editor@example.com'
+mail_origin: 'admin@example.com'
+mailer_settings:
+  connection_type: 'smtp'
+  address: 'smtp.gmail.com'
+  port: 587
+  domain: 'example.com'
+  user_name: "'env_mailer_username'"
+  password: "'env_mailer_password'"
+  authentication: 'plain'
+  enable_starttls_auto: true
