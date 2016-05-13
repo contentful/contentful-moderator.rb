@@ -1,6 +1,6 @@
 # Contentful Moderator
 
-Moderator Server for Contentful entries.
+Moderator Server listens for incoming webhooks from Contentful to manage moderation workflows of entries.
 
 ## Contentful
 [Contentful](http://www.contentful.com) is a content management platform for web applications,
