@@ -1,5 +1,7 @@
 # Contentful Moderator
 
+> This gem has been superseded by a product feature. You can read more here: https://www.contentful.com/blog/2019/10/22/content-operations-easier-scheduled-publishing-comments-tasks/
+
 Moderator Server listens for incoming webhooks from Contentful to manage moderation workflows of entries.
 
 ## Contentful
